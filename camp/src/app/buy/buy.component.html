@@ -1,1 +1,59 @@
-<p>buy works!</p>
+
+<table>
+    <tr>
+        <td>смена</td>
+        <ng-container *ngFor="let item of table">
+            <td>{{item.part}}</td>
+        </ng-container>
+        <!-- <td>1-ая(июнь)</td>
+        <td>2-ая(июль)</td>
+        <td>3-яя(август)</td>
+        <td>4-ая(февраль)</td> -->
+    </tr>
+    <tr>
+        <td>тематика</td>
+        <ng-container *ngFor="let item of table">
+            <td>{{item.theme}}</td>
+        </ng-container>
+        <!-- <td>игры с мячом</td>
+        <td>летние виды спорта</td>
+        <td>боевые искусства</td>
+        <td>зимние виды спорта</td> -->
+    </tr>
+    <tr>
+        <td>отряды</td>
+        <ng-container *ngFor="let item of table">
+            <td>{{item.squad}}</td>
+        </ng-container>
+        <!-- <td>баскетбол, футбол, большой теннис,гандбол, крикет</td>
+        <td>плавание, лёгкая атлетика, бег, спортивное ориентирование</td>
+        <td>греко-римская борьба, бокс, кик-боксинг, армейский рукопашный бой, военно-тактические игры( страйкбол, пейнтбол )</td>
+        <td>кёрлинг, хокей, горные лыжи, сноубординг, фигурное катание, саллом</td> -->
+    </tr>
+    <tr>
+        <td>всего мест</td>
+        <ng-container *ngFor="let item of table">
+            <td>{{item.AllPlaces}}</td>
+        </ng-container>
+        <!-- <td>150</td>
+        <td>125</td>
+        <td>100</td>
+        <td>75</td> -->
+    </tr>
+    <tr>
+        <td>свободно мест</td>
+        <ng-container *ngFor="let item of table">
+            <td>{{item.CountOfVacancies}}</td>
+        </ng-container>
+        <!-- <td>143</td>
+        <td>109</td>
+        <td>91</td>
+        <td><span class="full">0</span></td> -->
+    </tr>
+    <tr>
+        <td></td>
+        <ng-container *ngFor="let item of table">
+            <td><button (click)="toBook(item.id)">забронировать</button></td>
+        </ng-container>
+    </tr>
+</table>

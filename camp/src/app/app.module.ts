@@ -7,6 +7,8 @@ import { MainComponent } from './main/main.component';
 import { AboutComponent } from './about/about.component';
 import { SqadsComponent } from './sqads/sqads.component';
 import { BuyComponent } from './buy/buy.component';
+import { FirstComponent } from './first/first.component';
+import { FormsModule } from "@angular/forms";
 
 
 @NgModule({
@@ -16,11 +18,13 @@ import { BuyComponent } from './buy/buy.component';
     AboutComponent,
     SqadsComponent,
     BuyComponent,
+    FirstComponent,
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
